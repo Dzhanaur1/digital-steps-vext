@@ -1,113 +1,858 @@
+// "use client";
+import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Digital Steps || Курсы IT для детей",
+  description:
+    "Онлайн школа IT для детей. Курсы по компьютерной грамотности, созданию сайтов и веб-дизайну. Помогаем детям развивать навыки работы с компьютером и программами.",
+  keywords:
+    "программирование для детей, курсы программирования для детей онлайн, школа программирования для детей, онлайн курсы программирования для школьников, программирование для детей онлайн обучение, компьютерная грамотность для детей, курсы компьютерной грамотности",
+  authors: { name: "Digital Steps" },
+
+  openGraph: {
+    title: "Digital Steps | Курсы IT для детей",
+    description:
+      "Онлайн школа IT для детей. Курсы по компьютерной грамотности, созданию сайтов и веб-дизайну. Помогаем детям развивать навыки работы с компьютером и программами.",
+  },
+};
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <section className="banner v1 pt-140 pb-50 pb-lg-70 pb-xl-100 pt-xl-240 pb-xxl-120">
+        <div className="container">
+          <div className="main-banner-content">
+            <div className="row">
+              <div className="col-xl-6 order-xl-1">
+                <div className="banner-right">
+                  <div className="banner-profile-img">
+                    <img
+                      src="assets/img/banner/v1/profile-img.png"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <div className="shap-dot-1"></div>
+                  <div className="shap-dot-2"></div>
+                  <div className="shap-dot-3"></div>
+                  <img
+                    className="arrow-shap"
+                    src="assets/img/banner/v1/shap-1.svg"
+                    alt="shap"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-6">
+                <div className="banner-left pt-xl-30 pb-xl-30">
+                  <div className="anime-bubble"></div>
+                  <div className="section-title">
+                    <h6 className="text-6 text-upper">Digital Steps</h6>
+                    <h2 className="text-2 text-bold mt-20">
+                      Курсы программирования для детей
+                    </h2>
+                  </div>
+                  <form action="#" className="start-ai-form mt-40">
+                    <input type="tel" placeholder="Телефон" required />
+                    <button
+                      className="btn-anime v1 round-border-full"
+                      type="submit"
+                    >
+                      Записаться на курс
+                      <i className="my-icon icon-arrow-right"></i>
+                    </button>
+                  </form>
+                  <div className="section-title">
+                    <h5 className="text-6 mt-20 text-left">
+                      <b className="text-bold">Цена:</b> от 550 руб за 1 занятие
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="services v1 pb-50 pb-md-70 pb-xl-100 pb-xxl-120">
+        <div className="container">
+          <div className="section-title-center v1">
+            <h2
+              className="text-2 text-bold wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              Отвлечём ребенка от игр и научим программировать
+            </h2>
+          </div>
+          <div className="row justify-content-center mt-space mt-50 mt-xl-60">
+            <div
+              className="col-md-6 col-xl-4 wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="services-card">
+                <div className="card-icon">
+                  <i className="my-icon icon-artificial-intelligence"></i>
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link href="site-develop.html">Создание сайтов</Link>
+                </h4>
+                <p className="text-para-1">
+                  Научим создавать свои собственные веб-страницы. Основы HTML,
+                  CSS и JS. В конце курса каждый ребенок создаст свой первый
+                  сайт!
+                </p>
+                <Link
+                  href="site-develop.html"
+                  className="link-anime v6 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-xl-4 wow animate__fadeInUp"
+              data-wow-delay="0.3s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="services-card">
+                <div className="card-icon">
+                  <i className="my-icon icon-bulb"></i>
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link href="web-design.html">Веб-дизайн</Link>
+                </h4>
+                <p className="text-para-1">
+                  Создание макета сайта в Figma, визуальное оформление, работа с
+                  изображениями, шрифтами и другими элементами веб-страницы
+                </p>
+                <Link
+                  href="web-design.html"
+                  className="link-anime v6 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-xl-4 wow animate__fadeInUp"
+              data-wow-delay="0.5s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="services-card">
+                <div className="card-icon">
+                  <i className="my-icon icon-robot-1"></i>
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link
+                    href="komputernaya-gramotnost.html"
+                    className="text-nowrap"
+                  >
+                    Компьютерная грамотность
+                  </Link>
+                </h4>
+                <p className="text-para-1">
+                  Научим работать на компьютере! Дети узнают, из чего состоит
+                  компьютер, использовать текстовые редакторы и программы для
+                  создания презентаций.
+                </p>
+                <Link
+                  href="komputernaya-gramotnost.html"
+                  className="link-anime v6 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section className="patient-care v1 pt-xl-100 pt-xxl-120">
+        <div className="container">
+          <div className="section-title-center v1">
+            <h2
+              className="text-2 text-bold wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              Почему стоит выбрать <br />
+              наши курсы
+            </h2>
+          </div>
+          <div className="row justify-content-xl-between mt-50 mt-xl-60">
+            <div className="col-lg-7 col-xl-6 order-lg-1">
+              <div
+                className="image-right wow animate__zoomIn"
+                data-wow-delay="0.3s"
+                data-wow-offset="20"
+                data-wow-duration="0.8s"
+              >
+                <img
+                  style={{
+                    maxHeight: "600px",
+                    width: "auto",
+                    objectFit: "contain",
+                  }}
+                  src="assets/img/revolutionizing-care-ai/v1/img.webp"
+                  alt="profile-img"
+                />
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="content-left">
+                <ul className="categories">
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.1s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <p className="text-2">
+                      Практические навыки
+                      <i className="my-icon icon-arrow-right"></i>
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.3s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <p className="text-2">
+                      Развитие креативности
+                      <i className="my-icon icon-arrow-right"></i>
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.5s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <p className="text-2">
+                      Умение решать проблемы
+                      <i className="my-icon icon-arrow-right"></i>
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.7s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <p className="text-2">
+                      Интересное и увлекательное обучение
+                      <i className="my-icon icon-arrow-right"></i>
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.7s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <p className="text-2">
+                      Индивидуальный подход
+                      <i className="my-icon icon-arrow-right"></i>
+                    </p>
+                  </li>
+                </ul>
+                <p className="text-para-1 mt-30 mt-xl-60">
+                  Наши курсы разработаны для того, чтобы помочь детям освоить
+                  важные навыки в мире IT и веб-дизайна. Мы предлагаем
+                  увлекательное и интерактивное обучение, которое поможет вашему
+                  ребенку не только приобрести практические знания, но и развить
+                  множество полезных качеств.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className="collaboration v1 pt-50 pt-md-70 pt-xl-100 pt-xxl-120">
+        <div className="container">
+          <div className="section-title-center v1">
+            <h2
+              className="text-2 text-bold wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              Откройте мир IT вместе с Нами!
+            </h2>
+            <p
+              className="text-para-1 wow animate__fadeInUp"
+              data-wow-delay="0.3s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              Дадим все необходимые базовые знания и навыки и поможем
+              разобраться, кем лучше стать, когда вырастешь
+            </p>
+          </div>
+          <div className="row justify-content-center mt-space mt-50 mt-xl-60">
+            <div
+              className="col-md-6 col-xl-3 wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="collaboration-card">
+                <div className="card-logo">
+                  <img
+                    src="assets/img/service-collaboration/v1/windows.svg"
+                    alt="logo"
+                  />
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link href="service-details.html">
+                    Компьютерная грамотность
+                  </Link>
+                </h4>
+                <p className="text-para-1">
+                  Дети познакомятся с основными компонентами компьютера и
+                  научатся работать...
+                </p>
+                <Link
+                  href="service-details.html"
+                  className="link-anime v7 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-xl-3 wow animate__fadeInUp"
+              data-wow-delay="0.3s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="collaboration-card">
+                <div className="card-logo">
+                  <img
+                    src="assets/img/service-collaboration/v1/html.svg"
+                    alt="logo"
+                  />
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link href="service-details.html">
+                    Разработка <br />
+                    Веб-сайтов
+                  </Link>
+                </h4>
+                <p className="text-para-1">
+                  Основы HTML и CSS.Верстка простых веб-страниц по
+                  макету.Создание и оформление контента
+                </p>
+                <Link
+                  href="service-details.html"
+                  className="link-anime v7 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-xl-3 wow animate__fadeInUp"
+              data-wow-delay="0.5s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="collaboration-card">
+                <div className="card-logo">
+                  <img
+                    src="assets/img/service-collaboration/v1/logo-7.svg"
+                    alt="logo"
+                  />
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link href="service-details.html">Разработка дизайна </Link>
+                </h4>
+                <p className="text-para-1">
+                  Основы графического дизайна.Работа с цветами и
+                  шрифтами/Создание макетов веб-страниц в Figma
+                </p>
+                <Link
+                  href="service-details.html"
+                  className="link-anime v7 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+            <div
+              className="col-md-6 col-xl-3 wow animate__fadeInUp"
+              data-wow-delay="0.7s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              <div className="collaboration-card">
+                <div className="card-logo">
+                  <img
+                    src="assets/img/service-collaboration/v1/c++.svg"
+                    alt="logo"
+                  />
+                </div>
+                <h4 className="text-4 text-bold">
+                  <Link href="service-details.html">
+                    Основы{" "}
+                    <span style={{ whiteSpace: "nowrap" }}>алгоритмизации</span>
+                  </Link>
+                </h4>
+                <p className="text-para-1">
+                  Построение простых алгоритмов: создание простых программ.
+                  Программирование на начальном уровне.
+                </p>
+                <Link
+                  href="service-details.html"
+                  className="link-anime v7 round-border-full text-capital"
+                >
+                  Подробнее <i className="my-icon icon-arrow-right-long"></i>
+                </Link>
+              </div>
+            </div>
+            <div className="mt-20 d-flex">
+              <Link
+                href="blog.html"
+                className="btn-anime ml-auto v2 text-capital round-border-full"
+              >
+                Все курсы <i className="my-icon icon-arrow-right"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section className="work-process v1 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-120 pb-xxl-120">
+        <div className="container">
+          <div className="row align-items-center justify-content-xl-between">
+            <div className="col-xl-6 col-xxl-5">
+              <div className="mobile-img-left">
+                <img
+                  src="assets/img/work-process/v1/img-1.png"
+                  alt="mobile-img"
+                />
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="content-right">
+                <div className="section-title">
+                  <h2 className="text-2 text-bold">
+                    Чему научится ребенок на Наших курсах
+                  </h2>
+                </div>
+                <ul className="work-process-cards mt-40">
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.1s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <h2 className="text-2 text-bold">01</h2>
+                    <h4 className="text-4 text-capital text-bold">
+                      Анализировать
+                    </h4>
+                    <p className="text-para-1">
+                      На наших курсах дети научатся внимательно изучать
+                      информацию, разбирать сложные задачи на составляющие и
+                      находить оптимальные решения.
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.3s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <h2 className="text-2 text-bold">02</h2>
+                    <h4 className="text-4 text-capital text-bold">
+                      Критически мыслить
+                    </h4>
+                    <p className="text-para-1">
+                      Дети научатся критически оценивать информацию, проверять
+                      её достоверность и принимать обоснованные решения на
+                      основе анализа данных.
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.5s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <h2 className="text-2 text-bold">03</h2>
+                    <h4 className="text-4 text-capital text-bold">
+                      Коммуницировать
+                    </h4>
+                    <p className="text-para-1">
+                      Дети улучшат свои навыки общения, научатся ясно и чётко
+                      излагать свои мысли, что поможет им лучше выражать свои
+                      идеи и работать с другими.
+                    </p>
+                  </li>
+                  <li
+                    className="wow animate__fadeInUp"
+                    data-wow-delay="0.7s"
+                    data-wow-offset="20"
+                    data-wow-duration="0.8s"
+                  >
+                    <h2 className="text-2 text-bold">04</h2>
+                    <h4 className="text-4 text-capital text-bold">
+                      Планировать
+                    </h4>
+                    <p className="text-para-1">
+                      Дети научатся эффективно планировать своё время,
+                      расставлять приоритеты и составлять расписание для
+                      выполнения задач.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="testimonial v1 pt-50 pt-md-70 pt-xl-100 pt-xxl-120">
+        <div className="container bLine pb-50 pb-md-70 pb-xl-100 pb-xxl-120">
+          <div className="section-title-center v1">
+            <h2
+              className="text-2 text-capital text-bold wow animate__fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-offset="20"
+              data-wow-duration="0.8s"
+            >
+              Отзывы учеников о наших курсах
+            </h2>
+          </div>
+          <div className="slider mt-50 mt-xl-60">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
+                <div className="testimonial-card">
+                  <span className="q-icon-1">
+                    <i className="my-icon icon-quotation-bottom-left"></i>
+                  </span>
+                  <span className="q-icon-2">
+                    <i className="my-icon icon-quotation-top-left"></i>
+                  </span>
+                  <div className="testimonial-profile">
+                    <div className="profile-header">
+                      <div className="profile-img">
+                        <img
+                          src="assets/img/testominial/v1/profile-1.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div className="profile-content">
+                        <h4 className="text-4 text-bold">Анастасия</h4>
+                        <p className="text-para-2">Компьютерная грамотность</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-content">
+                    <p className="text-para-1 text-light">
+                      Мой сын с удовольствием изучал основы работы с компьютером
+                      и прикладными программами. Особенно понравилось создание
+                      презентаций в Google Slides. Теперь Максим намного
+                      увереннее пользуется компьютером и даже помогает мне с
+                      некоторыми задачами. Спасибо за замечательные уроки!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="testimonial-card">
+                  <span className="q-icon-1">
+                    <i className="my-icon icon-quotation-bottom-left"></i>
+                  </span>
+                  <span className="q-icon-2">
+                    <i className="my-icon icon-quotation-top-left"></i>
+                  </span>
+                  <div className="testimonial-profile">
+                    <div className="profile-header">
+                      <div className="profile-img">
+                        <img
+                          src="assets/img/testominial/v1/profile-2.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div className="profile-content">
+                        <h4 className="text-4 text-bold">Ольга</h4>
+                        <p className="text-para-2">Разработка веб-сайтов</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-content">
+                    <p className="text-para-1 text-light">
+                      Артём очень полюбил курс по созданию сайтов! Он научился
+                      создавать свои первые сайты, использовать HTML и CSS.
+                      Теперь мечтает стать веб-разработчиком. Большое спасибо за
+                      курс!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="testimonial-card">
+                  <span className="q-icon-1">
+                    <i className="my-icon icon-quotation-bottom-left"></i>
+                  </span>
+                  <span className="q-icon-2">
+                    <i className="my-icon icon-quotation-top-left"></i>
+                  </span>
+                  <div className="testimonial-profile">
+                    <div className="profile-header">
+                      <div className="profile-img">
+                        <img
+                          src="assets/img/testominial/v1/profile-1.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div className="profile-content">
+                        <h4 className="text-4 text-bold">Олег</h4>
+                        <p className="text-para-2">Основы алгоритмизации</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-content">
+                    <p className="text-para-1 text-light">
+                      Очень благодарен учителю за отличные объяснения! Мой
+                      ребенок с удовольствием посещает занятия и каждый раз
+                      возвращается с новыми знаниями. Спасибо за терпение и
+                      профессионализм!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="testimonial-card">
+                  <span className="q-icon-1">
+                    <i className="my-icon icon-quotation-bottom-left"></i>
+                  </span>
+                  <span className="q-icon-2">
+                    <i className="my-icon icon-quotation-top-left"></i>
+                  </span>
+                  <div className="testimonial-profile">
+                    <div className="profile-header">
+                      <div className="profile-img">
+                        <img
+                          src="assets/img/testominial/v1/profile-2.png"
+                          alt="profile"
+                        />
+                      </div>
+                      <div className="profile-content">
+                        <h4 className="text-4 text-bold">Андрей</h4>
+                        <p className="text-para-2">Разработка Веб-дизайна</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-content">
+                    <p className="text-para-1 text-light">
+                      Очень приятно видеть, как учителю удается поддерживать
+                      интерес у детей к изучаемому материалу. Мой ребенок
+                      возвращается с уроков в восторге, полон энтузиазма и готов
+                      рассказывать о новых открытиях. Спасибо за такие
+                      увлекательные занятия!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-section v1 pt-50 pb-50 pt-md-70 pb-md-70 pt-xl-100 pb-xl-100 pt-xxl-120 pb-xxl-120">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6">
+              <div
+                className="faq-img wow animate__zoomIn"
+                data-wow-delay="0.3s"
+                data-wow-offset="20"
+                data-wow-duration="0.8s"
+              >
+                <img src="assets/img/faq/v1/img-1.png" alt="faq-img" />
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="section-title">
+                <h2 className="text-2  text-bold">
+                  Остались вопросы?
+                  <br />
+                </h2>
+              </div>
+              <ul className="accordion-main mt-40" id="faqAccordion">
+                <li
+                  className="active wow animate__fadeInUp"
+                  data-wow-delay="0.1s"
+                  data-wow-offset="20"
+                  data-wow-duration="0.8s"
+                >
+                  <button
+                    className="accordion-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqAccordion-item-1"
+                  >
+                    Что такое пробное занятие и как на него записаться?
+                  </button>
+                  <div
+                    id="faqAccordion-item-1"
+                    className="collapse show"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="box-content">
+                      <p className="text-para-1">
+                        Пробное занятие — это возможность для вашего ребенка
+                        познакомиться с форматом обучения и преподавателем,
+                        прежде чем начать полноценное обучение. На первом
+                        занятии мы познакомимся с ребенком, обсудим его интересы
+                        и цели, а также проведем вводное занятие по выбранному
+                        курсу. Родителям не нужно готовить ребенка заранее, все
+                        необходимые материалы и инструкции будут предоставлены.
+                        Записаться на пробное занятие можно через наш сайт,
+                        выбрав удобное время, или связавшись с нами по телефону
+                        или через WhatsApp. Родители могут присутствовать на
+                        первом занятии, чтобы убедиться в качестве обучения и
+                        задать интересующие вопросы.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="wow animate__fadeInUp"
+                  data-wow-delay="0.3s"
+                  data-wow-offset="20"
+                  data-wow-duration="0.8s"
+                >
+                  <button
+                    className="accordion-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqAccordion-item-2"
+                  >
+                    Какую поддержку вы предоставляете ученикам вне занятий?
+                  </button>
+                  <div
+                    id="faqAccordion-item-2"
+                    className="collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="box-content">
+                      <p className="text-para-1">
+                        Мы предоставляем нашим ученикам доступ к
+                        онлайн-ресурсам, таким как учебные материалы, видеоуроки
+                        и дополнительные задания. Также у нас есть чат
+                        поддержки, где ребенок может задать вопросы
+                        преподавателю и получить помощь по любым возникшим
+                        трудностям.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="wow animate__fadeInUp"
+                  data-wow-delay="0.5s"
+                  data-wow-offset="20"
+                  data-wow-duration="0.8s"
+                >
+                  <button
+                    className="accordion-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqAccordion-item-3"
+                  >
+                    Какие материалы и оборудование нужны для занятий?
+                  </button>
+                  <div
+                    id="faqAccordion-item-3"
+                    className="collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="box-content">
+                      <p className="text-para-1">
+                        Для занятий ребенку потребуется компьютер с доступом в
+                        интернет, а также базовые программы, такие как браузер,
+                        текстовый редактор и, при необходимости,
+                        специализированное программное обеспечение, которое мы
+                        предоставим. Все дополнительные материалы и ресурсы
+                        будут также предоставлены.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="wow animate__fadeInUp"
+                  data-wow-delay="0.7s"
+                  data-wow-offset="20"
+                  data-wow-duration="0.8s"
+                >
+                  <button
+                    className="accordion-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqAccordion-item-4"
+                  >
+                    Как записаться на курс и что для этого нужно?
+                  </button>
+                  <div
+                    id="faqAccordion-item-4"
+                    className="collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="box-content">
+                      <p className="text-para-1">
+                        Записаться на курс можно через наш сайт, заполнив форму
+                        заявки, или связавшись с нами по телефону или через
+                        WhatsApp. Мы поможем выбрать подходящий курс и ответим
+                        на все ваши вопросы.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="wow animate__fadeInUp"
+                  data-wow-delay="0.7s"
+                  data-wow-offset="20"
+                  data-wow-duration="0.8s"
+                >
+                  <button
+                    className="accordion-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqAccordion-item-5"
+                  >
+                    Что делать, если ребенок столкнулся с трудностями в учебе?
+                  </button>
+                  <div
+                    id="faqAccordion-item-5"
+                    className="collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="box-content">
+                      <p className="text-para-1">
+                        Если ребенок столкнулся с трудностями, он всегда может
+                        обратиться за помощью к преподавателю. Мы также
+                        предоставляем дополнительные материалы и консультации
+                        для решения любых возникающих вопросов.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

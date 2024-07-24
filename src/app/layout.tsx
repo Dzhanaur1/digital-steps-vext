@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import Link from "next/link";
+import Home from "./page";
+import Header from "./(components)/Header";
 
+import "./style.min.css";
+import Footer from "./(components)/Footer";
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +21,52 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        {/* <link rel="stylesheet" href="assets/all-icons/myicon.css" /> */}
+
+        {/* <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> */}
+
+        {/* <link rel="stylesheet" href="assets/css/plugins.css" /> */}
+
+        {/* <link rel="stylesheet" href="assets/css/style.min.css" /> */}
+
+        {/* <link rel="stylesheet" href="assets/css/responsive.min.css" /> */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <Script
+          src="https://kit.fontawesome.com/0abf972db9.js"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/js/jquery-3.7.1.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="/assets/js/bootstrap.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script src="/assets/js/plugins.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/index.min.js" strategy="lazyOnload" />
+        {/* <div className="preloder v1"></div> */}
+        <div id="root">
+          <Header />
+          {children}
+
+          <Footer />
+        </div>
+      </body>
+      {/* <body classNameName={inter.classNameName}>{children}</body> */}
     </html>
   );
 }
