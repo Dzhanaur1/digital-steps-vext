@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="banner-right">
                   <div className="banner-profile-img">
                     <img
-                      src="assets/img/banner/v1/profile-img.png"
+                      src="/assets/img/banner/v1/profile-img.png"
                       alt="profile-img"
                     />
                   </div>
@@ -98,7 +98,7 @@ export default function Home() {
                   <i className="my-icon icon-artificial-intelligence"></i>
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="site-develop.html">Создание сайтов</Link>
+                  <Link href="courses/site-develop">Создание сайтов</Link>
                 </h4>
                 <p className="text-para-1">
                   Научим создавать свои собственные веб-страницы. Основы HTML,
@@ -106,7 +106,7 @@ export default function Home() {
                   сайт!
                 </p>
                 <Link
-                  href="site-develop.html"
+                  href="courses/site-develop"
                   className="link-anime v6 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>
@@ -124,14 +124,14 @@ export default function Home() {
                   <i className="my-icon icon-bulb"></i>
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="web-design.html">Веб-дизайн</Link>
+                  <Link href="courses/web-design">Веб-дизайн</Link>
                 </h4>
                 <p className="text-para-1">
                   Создание макета сайта в Figma, визуальное оформление, работа с
                   изображениями, шрифтами и другими элементами веб-страницы
                 </p>
                 <Link
-                  href="web-design.html"
+                  href="courses/web-design"
                   className="link-anime v6 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>
@@ -150,7 +150,7 @@ export default function Home() {
                 </div>
                 <h4 className="text-4 text-bold">
                   <Link
-                    href="komputernaya-gramotnost.html"
+                    href="courses/komputernaya-gramotnost"
                     className="text-nowrap"
                   >
                     Компьютерная грамотность
@@ -162,7 +162,7 @@ export default function Home() {
                   создания презентаций.
                 </p>
                 <Link
-                  href="komputernaya-gramotnost.html"
+                  href="courses/komputernaya-gramotnost"
                   className="link-anime v6 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>
@@ -313,7 +313,7 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="service-details.html">
+                  <Link href="courses/komputernaya-gramotnost">
                     Компьютерная грамотность
                   </Link>
                 </h4>
@@ -322,7 +322,7 @@ export default function Home() {
                   научатся работать...
                 </p>
                 <Link
-                  href="service-details.html"
+                  href="courses/komputernaya-gramotnost"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>
@@ -343,7 +343,7 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="service-details.html">
+                  <Link href="courses/site-develop">
                     Разработка <br />
                     Веб-сайтов
                   </Link>
@@ -353,7 +353,7 @@ export default function Home() {
                   макету.Создание и оформление контента
                 </p>
                 <Link
-                  href="service-details.html"
+                  href="courses/site-develop"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>
@@ -374,14 +374,14 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="service-details.html">Разработка дизайна </Link>
+                  <Link href="courses/web-design">Разработка дизайна </Link>
                 </h4>
                 <p className="text-para-1">
                   Основы графического дизайна.Работа с цветами и
                   шрифтами/Создание макетов веб-страниц в Figma
                 </p>
                 <Link
-                  href="service-details.html"
+                  href="courses/web-design"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>
@@ -402,7 +402,7 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="service-details.html">
+                  <Link href="courses/osnovy-algoritmizatsii">
                     Основы{" "}
                     <span style={{ whiteSpace: "nowrap" }}>алгоритмизации</span>
                   </Link>
@@ -412,7 +412,7 @@ export default function Home() {
                   Программирование на начальном уровне.
                 </p>
                 <Link
-                  href="service-details.html"
+                  href="courses/osnovy-algoritmizatsii"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long"></i>

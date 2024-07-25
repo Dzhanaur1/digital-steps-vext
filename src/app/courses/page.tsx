@@ -6,9 +6,9 @@ const CoursesPage = () => {
     <main>
       {/* Breadcum Start */}
       <section className="breadcum v1 pt-125 pb-50 pt-sm-145 pt-md-180 pb-md-100 pt-xl-275 pb-xl-170">
-        <div
+        <img
           className="bg-shap bg-cover-center"
-          data-background="assets/img/breadcum/v1/bg-shap.png"
+          src="/assets/img/breadcum/v1/bg-shap.png"
         />
         <div className="container">
           <div className="breadcum-list">
@@ -37,13 +37,13 @@ const CoursesPage = () => {
               <div className="services-card">
                 <div className="card-logo">
                   <img
-                    src="assets/img/service-collaboration/v1/windows.svg"
+                    src="/assets/img/service-collaboration/v1/windows.svg"
                     alt="logo"
                   />
                 </div>
                 <h4 className="text-4 text-bold">
                   <Link href="courses/komputernaya-gramotnost">
-                    Компьютерная грамотность
+                    Компьютерная <br /> грамотность
                   </Link>
                 </h4>
                 <p className="text-para-1">
@@ -109,7 +109,7 @@ const CoursesPage = () => {
                 </h4>
                 <p className="text-para-1">
                   Основы графического дизайна.Работа с цветами и
-                  шрифтами/Создание макетов веб-страниц в Figma
+                  шрифтами.Создание макетов веб-страниц в Figma
                 </p>
                 <Link
                   href="courses/web-design"

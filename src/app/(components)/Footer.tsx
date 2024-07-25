@@ -53,16 +53,22 @@ const Footer = () => {
               <div className="footer__widget-content">
                 <ul className="link-list">
                   <li>
-                    <Link href="#">Компьютерная грамотность</Link>
+                    <Link href="courses/komputernaya-gramotnost">
+                      Компьютерная грамотность
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#">Разработка веб-сайтов</Link>
+                    <Link href="courses/site-develop">
+                      Разработка веб-сайтов
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#">Разработка дизайна</Link>
+                    <Link href="courses/web-design">Разработка дизайна</Link>
                   </li>
                   <li>
-                    <Link href="#">Основы алгоритмизации</Link>
+                    <Link href="courses/osnovy-algoritmizatsii">
+                      Основы алгоритмизации
+                    </Link>
                   </li>
                 </ul>
               </div>

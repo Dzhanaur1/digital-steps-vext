@@ -14,7 +14,7 @@ const page = () => {
         <div className="container">
           <div className="breadcum-list">
             <h2 className="text-2 text-capital text-bold text-upper">
-              Разработка веб-сайтов
+              Веб-дизайн
             </h2>
             <ul>
               <li>
@@ -23,7 +23,7 @@ const page = () => {
               <li>
                 <Link href="/courses">Курсы</Link>
               </li>
-              <li>Разработка веб-сайтов</li>
+              <li>Веб-дизайн</li>
             </ul>
           </div>
         </div>
@@ -37,7 +37,7 @@ const page = () => {
               <div className="courses-content">
                 <div className="big-img">
                   <img
-                    src="/assets/img/courses/develop/intro-v2.webp"
+                    src="/assets/img/courses/design/inro-v2.webp"
                     alt="courses"
                   />
                   <div
@@ -53,20 +53,17 @@ const page = () => {
                 </div>
                 <div className="section-title mt-20">
                   <h2 className="text-2 text-semibold">
-                    Курс Разработка веб-сайтова для <br />
+                    Курс веб-дизайна для <br />
                     детей 8-14 лет.
                   </h2>
                 </div>
                 <p className="text-para-1 mt-30">
-                  Курс "Разработка веб-сайтов" поможет детям освоить основы
-                  HTML, CSS и JavaScript. Они научатся создавать и стилизовать
-                  веб-страницы, добавлять интерактивные элементы, работать с
-                  макетами, а также применять адаптивный дизайн для различных
-                  устройств. Практические занятия и выполнение реального проекта
-                  развивают креативное мышление и технические навыки. В
-                  результате дети смогут создавать функциональные и
-                  привлекательные веб-сайты и применять свои знания в реальных
-                  проектах.
+                  Курс "Веб-дизайн" - это практическое погружение в мир создания
+                  веб-интерфейсов с использованием Figma. В увлекательной и
+                  доступной форме дети познакомятся с основами дизайна,
+                  цветовыми схемами, шрифтами и макетами. Благодаря практическим
+                  занятиям и четкой структуре обучения, каждый ребенок сможет
+                  создать свой собственный веб-дизайн.
                 </p>
                 <div className="section-title mb-20 mt-20">
                   <h2 className="text-2 text-semibold">
@@ -83,8 +80,7 @@ const page = () => {
                               data-bs-toggle="collapse"
                               data-bs-target="#faqAccordion-item-1"
                             >
-                              Модуль 1. Разработка веб-сайтов | Знакомство с
-                              HTML и CSS
+                              Модуль 1. Веб-дизайн | Знакомство с Figma
                             </button>
                             <div
                               id="faqAccordion-item-1"
@@ -103,7 +99,7 @@ const page = () => {
                                         <span className="list-number">01</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Основы HTML.
+                                            Теория цвета. Цветовая палитра.
                                           </h5>
                                         </div>
                                       </li>
@@ -115,7 +111,7 @@ const page = () => {
                                         <span className="list-number">02</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Теги и атрибуты.
+                                            Типографика в веб-дизайне.
                                           </h5>
                                         </div>
                                       </li>
@@ -127,7 +123,7 @@ const page = () => {
                                         <span className="list-number">03</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Формы и таблицы.
+                                            Компановка. Принципы компановки.
                                           </h5>
                                         </div>
                                       </li>
@@ -139,7 +135,7 @@ const page = () => {
                                         <span className="list-number">04</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Введение в CSS.
+                                            Введение в Figma.
                                           </h5>
                                         </div>
                                       </li>
@@ -151,7 +147,8 @@ const page = () => {
                                         <span className="list-number">05</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Макет и позиционирование.
+                                            Основные принципы организации
+                                            проектов и макетов в Figma.
                                           </h5>
                                         </div>
                                       </li>
@@ -163,7 +160,8 @@ const page = () => {
                                         <span className="list-number">06</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Flexbox.
+                                            Работа с фигурами и элементами в
+                                            Figma.
                                           </h5>
                                         </div>
                                       </li>
@@ -175,7 +173,8 @@ const page = () => {
                                         <span className="list-number">07</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Адаптивный дизайн
+                                            Работа с текстом и изображением в
+                                            Figma.
                                           </h5>
                                         </div>
                                       </li>
@@ -192,7 +191,7 @@ const page = () => {
                               data-bs-toggle="collapse"
                               data-bs-target="#faqAccordion-item-2"
                             >
-                              Модуль 2. Разработка веб-сайтов | Знакомство с JS
+                              Модуль 2. Веб-дизайн | Знакомство с прототипами
                             </button>
                             <div
                               id="faqAccordion-item-2"
@@ -211,7 +210,8 @@ const page = () => {
                                         <span className="list-number">01</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Основы JavaScript.
+                                            Введение в прототипирование и его
+                                            цели в веб-дизайне.
                                           </h5>
                                         </div>
                                       </li>
@@ -223,7 +223,7 @@ const page = () => {
                                         <span className="list-number">02</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Управляющие конструкции.
+                                            Создание первого прототипа.
                                           </h5>
                                         </div>
                                       </li>
@@ -235,7 +235,7 @@ const page = () => {
                                         <span className="list-number">03</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Основы DOM.
+                                            Интерактивные элементы.
                                           </h5>
                                         </div>
                                       </li>
@@ -247,7 +247,7 @@ const page = () => {
                                         <span className="list-number">04</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Обработчики событий.
+                                            Анализ готовых сайтов. Редизайн.
                                           </h5>
                                         </div>
                                       </li>
@@ -259,7 +259,7 @@ const page = () => {
                                         <span className="list-number">05</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Функции.
+                                            Плагины в Figma.
                                           </h5>
                                         </div>
                                       </li>
@@ -276,8 +276,7 @@ const page = () => {
                               data-bs-toggle="collapse"
                               data-bs-target="#faqAccordion-item-3"
                             >
-                              Модуль 3. Разработка веб-сайтов | Практическое
-                              задание
+                              Модуль 3. Веб-дизайн | Практическое задание
                             </button>
                             <div
                               id="faqAccordion-item-3"
@@ -296,7 +295,7 @@ const page = () => {
                                         <span className="list-number">01</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Анализ макета.
+                                            Создание эскиза сайта.
                                           </h5>
                                         </div>
                                       </li>
@@ -308,7 +307,7 @@ const page = () => {
                                         <span className="list-number">02</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Создание структуры HTML.
+                                            Создание Вайрфрейма.
                                           </h5>
                                         </div>
                                       </li>
@@ -320,7 +319,7 @@ const page = () => {
                                         <span className="list-number">03</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Стилизация с помощью CSS.
+                                            Создание UI дизайна.
                                           </h5>
                                         </div>
                                       </li>
@@ -332,20 +331,7 @@ const page = () => {
                                         <span className="list-number">04</span>
                                         <div className="content">
                                           <h5 className="text-6 text-bold">
-                                            Разработка адаптивного дизайна.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Интерактивность с помощью
-                                            JavaScript.
+                                            Представление проекта.
                                           </h5>
                                         </div>
                                       </li>
@@ -382,64 +368,27 @@ const page = () => {
                       <ul className="check-mark-list">
                         <li>
                           <i className="my-icon icon-check" />
-                          <p className="text-para-1">Основные теги HTML.</p>
+                          <p className="text-para-1">Основам веб-дизайна.</p>
                         </li>
                         <li>
                           <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Создание структуры страницы.
-                          </p>
+                          <p className="text-para-1">Работе в Figma.</p>
                         </li>
                         <li>
                           <i className="my-icon icon-check" />
-                          <p className="text-para-1">Работа с изображениями.</p>
+                          <p className="text-para-1">Созданию макетов.</p>
                         </li>
                         <li>
                           <i className="my-icon icon-check" />
-                          <p className="text-para-1">HTML Формы.</p>
+                          <p className="text-para-1">Адаптивному дизайну.</p>
                         </li>
                         <li>
                           <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Основные понятия CSS. Цвета и шрифты.
-                          </p>
+                          <p className="text-para-1">Прототипированию.</p>
                         </li>
                         <li>
                           <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            CSS-классы и идентификаторы.
-                          </p>
-                        </li>
-                        <li>
-                          <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Макетирование с Flexbox и Grid.
-                          </p>
-                        </li>
-                        <li>
-                          <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Адаптивный дизайн и медиа-запросы.
-                          </p>
-                        </li>
-                        <li>
-                          <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Основы синтаксиса JavaScript.
-                          </p>
-                        </li>
-                        <li>
-                          <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Переменные и типы данных.Условия и циклы.Переменные
-                            и типы данных.
-                          </p>
-                        </li>
-                        <li>
-                          <i className="my-icon icon-check" />
-                          <p className="text-para-1">
-                            Функции.Обработка событий.
-                          </p>
+                          <p className="text-para-1">Презентации проектов.</p>
                         </li>
                       </ul>
                     </div>
@@ -458,7 +407,7 @@ const page = () => {
                     </h2>
                   </div>
                   <div>
-                    <OpenPopupButton courseId="site-develop" />
+                    <OpenPopupButton courseId="web-design" variant="v1" />
                   </div>
                   {/* <p class="text-3 mt-20 text-left">
                       <b class="text-bold">Цена:</b> от 550 руб за 1 занятие
@@ -525,7 +474,7 @@ const page = () => {
                           <div className="brand-text">
                             <h4 className="text-4 text-bold">Объем курса</h4>
                             <p className="text-para-1">
-                              Интенсивный курс: 20-25 часов увлекательного
+                              Интенсивный курс: 25-30 часов увлекательного
                               обучения
                             </p>
                           </div>

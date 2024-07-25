@@ -1,3 +1,4 @@
+import OpenPopupButton from "@/app/(components)/Button";
 import Link from "next/link";
 import React from "react";
 
@@ -408,12 +409,7 @@ const page = () => {
                     </h2>
                   </div>
                   <div>
-                    <Link
-                      href="#"
-                      className="btn-anime ml-auto v2 text-capital round-border-full"
-                    >
-                      Записаться <i className="my-icon icon-arrow-right" />
-                    </Link>
+                    <OpenPopupButton courseId="algorithm" />
                   </div>
                   {/* <p class="text-3 mt-20 text-left">
                       <b class="text-bold">Цена:</b> от 550 руб за 1 занятие

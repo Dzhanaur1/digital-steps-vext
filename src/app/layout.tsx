@@ -7,6 +7,8 @@ import Header from "./(components)/Header";
 import "./style.min.css";
 import Footer from "./(components)/Footer";
 import Script from "next/script";
+import { PopupProvider } from "./(context)/PopupProvider";
+import Popup from "./(components)/Popup";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -59,9 +61,13 @@ export default function RootLayout({
         <Script src="/assets/js/plugins.js" strategy="beforeInteractive" />
         <Script src="/assets/js/index.min.js" strategy="lazyOnload" />
         {/* <div className="preloder v1"></div> */}
+
         <div id="root">
-          <Header />
-          {children}
+          <PopupProvider>
+            <Header />
+            {children}
+            <Popup />
+          </PopupProvider>
 
           <Footer />
         </div>

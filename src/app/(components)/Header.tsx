@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
+import OpenPopupButton from "./Button";
 
 const Header = () => {
+  const currentPath = usePathname();
   return (
     <header>
       <div className="menu-bar v1">
@@ -17,17 +22,15 @@ const Header = () => {
 
             <nav className="main-menu">
               <ul>
-                <li className="active">
+                <li className={currentPath === "/" ? "active" : ""}>
                   <Link href="/">Главная</Link>
                 </li>
 
-                <li>
+                <li className={currentPath === "/courses" ? "active" : ""}>
                   <Link href="/courses">Курсы</Link>
                 </li>
-                <li>
-                  <Link href="/about-us">О нас</Link>
-                </li>
-                <li>
+
+                <li className={currentPath === "/contact" ? "active" : ""}>
                   <Link href="/contact">Контакты</Link>
                 </li>
               </ul>
@@ -36,7 +39,7 @@ const Header = () => {
               <div className="mobile-menu-header">
                 <div className="mobile-logo">
                   <Link href="index">
-                    <img src="assets/img/logo/Logo.svg" alt="Logo" />
+                    <img src="/assets/img/logo/Logo.svg" alt="Logo" />
                   </Link>
                 </div>
                 <button className="close-mobile-btn">
@@ -75,12 +78,7 @@ const Header = () => {
             </div>
             <ul className="menu-right">
               <li>
-                <Link
-                  href="#"
-                  className="link-anime v1 text-capital round-border-full"
-                >
-                  Записаться <i className="my-icon icon-arrow-right"></i>
-                </Link>
+                <OpenPopupButton variant="v1" />
               </li>
               <li>
                 <button className="mobile-menu-btn">

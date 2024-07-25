@@ -7,7 +7,9 @@ Version: 1.0
 License: 
 Tags: 
 */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "plugins.css";
 @import "bootstrap.min.css";
 body,
@@ -1504,7 +1506,7 @@ a:hover {
   font-size: 26px;
   line-height: 60px;
   border-radius: 100px;
-  color: var(--color-purple);
+  color: var(--color-orange);
   background: var(--color-black);
 }
 .sidebar__wrapper .contact-info-list li .text-para-1 a,
