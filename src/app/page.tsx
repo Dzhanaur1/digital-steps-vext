@@ -2,6 +2,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import MainPageForm from "./(components)/MainPageForm";
 
 export const metadata: Metadata = {
   title: "Digital Steps || Курсы IT для детей",
@@ -52,16 +53,7 @@ export default function Home() {
                       Курсы программирования для детей
                     </h2>
                   </div>
-                  <form action="#" className="start-ai-form mt-40">
-                    <input type="tel" placeholder="Телефон" required />
-                    <button
-                      className="btn-anime v1 round-border-full"
-                      type="submit"
-                    >
-                      Записаться на курс
-                      <i className="my-icon icon-arrow-right"></i>
-                    </button>
-                  </form>
+                  <MainPageForm />
                   <div className="section-title">
                     <h5 className="text-6 mt-20 text-left">
                       <b className="text-bold">Цена:</b> от 550 руб за 1 занятие
