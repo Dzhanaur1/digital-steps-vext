@@ -1,6 +1,40 @@
+import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
 import Link from "next/link";
 import React from "react";
+const pageData = [
+  {
+    title: "Модуль 1. Веб-дизайн | Знакомство с Figma",
+    items: [
+      "Теория цвета. Цветовая палитра.",
+      "Типографика в веб-дизайне.",
+      "Компановка. Принципы компановки.",
+      "Введение в Figma.",
+      "Основные принципы организации проектов и макетов в Figma.",
+      "Работа с фигурами и элементами в Figma.",
+      "Работа с текстом и изображением в Figma.",
+    ],
+  },
+  {
+    title: "Модуль 2. Веб-дизайн | Знакомство с прототипами",
+    items: [
+      "Введение в прототипирование и его цели в веб-дизайне.",
+      "Создание первого прототипа.",
+      "Интерактивные элементы.",
+      "Анализ готовых сайтов. Редизайн.",
+      "Плагины в Figma.",
+    ],
+  },
+  {
+    title: "Модуль 3. Веб-дизайн | Практическое задание",
+    items: [
+      "Создание эскиза сайта.",
+      "Создание Вайрфрейма.",
+      "Создание UI дизайна.",
+      "Представление проекта.",
+    ],
+  },
+];
 
 const page = () => {
   return (
@@ -72,7 +106,7 @@ const page = () => {
                   <section className="faq-section v1">
                     <div className="container">
                       <div className="row">
-                        <ul className="accordion-main mt-40" id="faqAccordion">
+                        {/* <ul className="accordion-main mt-40" id="faqAccordion">
                           <li>
                             <button
                               className="accordion-btn collapsed"
@@ -341,7 +375,8 @@ const page = () => {
                               </div>
                             </div>
                           </li>
-                        </ul>
+                        </ul> */}
+                        <Accordion data={pageData} />
                       </div>
                     </div>
                   </section>
@@ -407,18 +442,8 @@ const page = () => {
                     </h2>
                   </div>
                   <div>
-                    <OpenPopupButton courseId="web-design" variant="v1" />
+                    <OpenPopupButton courseId="web-design" />
                   </div>
-                  {/* <p class="text-3 mt-20 text-left">
-                      <b class="text-bold">Цена:</b> от 550 руб за 1 занятие
-                    </p> */}
-                  {/* <a href="#" class="prev-post"
-                      ><i class="my-icon icon-arrow-left"></i>
-                      <span class="text-5">Previous</span> </a
-                    ><a href="#" class="next-post"
-                      ><span class="text-5">Next</span>
-                      <i class="my-icon icon-arrow-right"></i
-                    ></a> */}
                 </div>
               </div>
             </div>

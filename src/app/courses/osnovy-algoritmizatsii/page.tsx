@@ -1,6 +1,39 @@
+import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
 import Link from "next/link";
 import React from "react";
+
+const pageData = [
+  {
+    title: "Модуль 1. Основы алгоритмизации | Введение в алгоритмизацию",
+    items: [
+      "Знакомство с алгоритмами.",
+      "Основные конструкции алгоритмов.",
+      "Знакомство со средой разработки.",
+      "Создание блок-схем.",
+    ],
+  },
+  {
+    title: "Модуль 2. Основы алгоритмизации | Основы алгоритмизации",
+    items: [
+      "Условные операторы.",
+      "Циклы.",
+      "Переменные.",
+      "Проектирование простых алгоритмов.",
+      "Работа с массивами и коллекциями.",
+    ],
+  },
+  {
+    title: "Модуль 3. Основы алгоритмизации | Практическое задание",
+    items: [
+      "Понятие задачи в контексте алгоритмизации.",
+      "Создание блок-схем по заданию.",
+      "Написание программы.",
+      "Тестирование и отладка.",
+      "Анализ и оптимизация алгоритма.",
+    ],
+  },
+];
 
 const page = () => {
   return (
@@ -75,252 +108,7 @@ const page = () => {
                   <section className="faq-section v1">
                     <div className="container">
                       <div className="row">
-                        <ul className="accordion-main mt-40" id="faqAccordion">
-                          <li>
-                            <button
-                              className="accordion-btn collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#faqAccordion-item-1"
-                            >
-                              Модуль 1. Основы алгоритмизации | Введение в
-                              алгоритмизацию
-                            </button>
-                            <div
-                              id="faqAccordion-item-1"
-                              className="collapse"
-                              data-bs-parent="#faqAccordion"
-                            >
-                              <div className="box-content">
-                                <div className="ai-development v1">
-                                  <div className="categories">
-                                    <ul className="categories-list">
-                                      <li
-                                        data-wow-delay="0.1s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">01</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Знакомство с алгоритмами.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.3s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">02</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Основные конструкции алгоритмов.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">03</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Знакомство со средой разработки.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Создание блок-схем.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <button
-                              className="accordion-btn collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#faqAccordion-item-2"
-                            >
-                              Модуль 2. Основы алгоритмизации | Основы
-                              алгоритмизации
-                            </button>
-                            <div
-                              id="faqAccordion-item-2"
-                              className="collapse"
-                              data-bs-parent="#faqAccordion"
-                            >
-                              <div className="box-content">
-                                <div className="ai-development v1">
-                                  <div className="categories">
-                                    <ul className="categories-list">
-                                      <li
-                                        data-wow-delay="0.1s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">01</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Условные операторы.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.3s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">02</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Циклы.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">03</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Переменные.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Проектирование простых алгоритмов.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">05</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Работа с массивами и коллекциями.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <button
-                              className="accordion-btn collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#faqAccordion-item-3"
-                            >
-                              Модуль 3. Основы алгоритмизации | Практическое
-                              задание
-                            </button>
-                            <div
-                              id="faqAccordion-item-3"
-                              className="collapse"
-                              data-bs-parent="#faqAccordion"
-                            >
-                              <div className="box-content">
-                                <div className="ai-development v1">
-                                  <div className="categories">
-                                    <ul className="categories-list">
-                                      <li
-                                        data-wow-delay="0.1s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">01</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Понятие задачи в контексте
-                                            алгоритмизации.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.3s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">02</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Создание блок-схем по заданию.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">03</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Написание программы.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Тестирование и отладка.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Анализ и оптимизация алгоритма.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+                        <Accordion data={pageData} />
                       </div>
                     </div>
                   </section>

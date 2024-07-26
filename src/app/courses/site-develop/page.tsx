@@ -1,6 +1,42 @@
+import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
 import Link from "next/link";
 import React from "react";
+
+const pageData = [
+  {
+    title: "Модуль 1. Разработка веб-сайтов | Знакомство с HTML и CSS",
+    items: [
+      "Основы HTML.",
+      "Теги и атрибуты.",
+      "Формы и таблицы.",
+      "Введение в CSS.",
+      "Макет и позиционирование.",
+      "Flexbox.",
+      "Адаптивный дизайн",
+    ],
+  },
+  {
+    title: "Модуль 2. Разработка веб-сайтов | Знакомство с JS",
+    items: [
+      "Основы JavaScript.",
+      "Управляющие конструкции.",
+      "Основы DOM.",
+      "Обработчики событий.",
+      "Функции.",
+    ],
+  },
+  {
+    title: "Модуль 3. Разработка веб-сайтов | Практическое задание",
+    items: [
+      "Анализ макета.",
+      "Создание структуры HTML.",
+      "Стилизация с помощью CSS.",
+      "Разработка адаптивного дизайна.",
+      "Интерактивность с помощью JavaScript.",
+    ],
+  },
+];
 
 const page = () => {
   return (
@@ -75,287 +111,7 @@ const page = () => {
                   <section className="faq-section v1">
                     <div className="container">
                       <div className="row">
-                        <ul className="accordion-main mt-40" id="faqAccordion">
-                          <li>
-                            <button
-                              className="accordion-btn collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#faqAccordion-item-1"
-                            >
-                              Модуль 1. Разработка веб-сайтов | Знакомство с
-                              HTML и CSS
-                            </button>
-                            <div
-                              id="faqAccordion-item-1"
-                              className="collapse"
-                              data-bs-parent="#faqAccordion"
-                            >
-                              <div className="box-content">
-                                <div className="ai-development v1">
-                                  <div className="categories">
-                                    <ul className="categories-list">
-                                      <li
-                                        data-wow-delay="0.1s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">01</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Основы HTML.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.3s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">02</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Теги и атрибуты.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">03</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Формы и таблицы.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Введение в CSS.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">05</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Макет и позиционирование.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">06</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Flexbox.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">07</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Адаптивный дизайн
-                                          </h5>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <button
-                              className="accordion-btn collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#faqAccordion-item-2"
-                            >
-                              Модуль 2. Разработка веб-сайтов | Знакомство с JS
-                            </button>
-                            <div
-                              id="faqAccordion-item-2"
-                              className="collapse"
-                              data-bs-parent="#faqAccordion"
-                            >
-                              <div className="box-content">
-                                <div className="ai-development v1">
-                                  <div className="categories">
-                                    <ul className="categories-list">
-                                      <li
-                                        data-wow-delay="0.1s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">01</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Основы JavaScript.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.3s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">02</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Управляющие конструкции.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">03</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Основы DOM.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Обработчики событий.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">05</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Функции.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <button
-                              className="accordion-btn collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#faqAccordion-item-3"
-                            >
-                              Модуль 3. Разработка веб-сайтов | Практическое
-                              задание
-                            </button>
-                            <div
-                              id="faqAccordion-item-3"
-                              className="collapse"
-                              data-bs-parent="#faqAccordion"
-                            >
-                              <div className="box-content">
-                                <div className="ai-development v1">
-                                  <div className="categories">
-                                    <ul className="categories-list">
-                                      <li
-                                        data-wow-delay="0.1s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">01</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Анализ макета.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.3s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">02</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Создание структуры HTML.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">03</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Стилизация с помощью CSS.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Разработка адаптивного дизайна.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                      <li
-                                        data-wow-delay="0.5s"
-                                        data-wow-offset={20}
-                                        data-wow-duration="0.8s"
-                                      >
-                                        <span className="list-number">04</span>
-                                        <div className="content">
-                                          <h5 className="text-6 text-bold">
-                                            Интерактивность с помощью
-                                            JavaScript.
-                                          </h5>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+                        <Accordion data={pageData} />
                       </div>
                     </div>
                   </section>

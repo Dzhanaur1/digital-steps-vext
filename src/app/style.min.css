@@ -4981,3 +4981,26 @@ a:hover {
 .icon-x-twitter:before {
   content: "\e92e";
 }
+
+.accordion-main .box-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.4s ease;
+  margin-top: 0;
+  padding: 0 !important;
+}
+
+.accordion-main .box-content.open {
+  max-height: 1500px;
+  transition: max-height 0.3s ease, padding 0.4s ease;
+  padding: 15px 25px;
+}
+
+.accordion-main .box-content.collapsing {
+  transition: max-height 0.3s ease, padding 0.4s ease;
+  padding: 0;
+  max-height: 0;
+}
+.ai-development {
+  padding: 25px 30px !important;
+}
