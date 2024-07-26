@@ -28,6 +28,9 @@ module.exports = {
           "2xl": "1320px",
         },
       },
+      colors: {
+        orange: "#e34d00",
+      },
     },
   },
   plugins: [],

@@ -421,7 +421,7 @@ export default function Home() {
             </div>
             <div className="mt-20 d-flex">
               <Link
-                href="blog.html"
+                href="courses"
                 className="btn-anime ml-auto v2 text-capital round-border-full"
               >
                 Все курсы <i className="my-icon icon-arrow-right"></i>

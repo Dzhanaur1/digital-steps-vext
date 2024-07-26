@@ -1,21 +1,59 @@
-// components/Popup.tsx
 "use client";
 
-import { useEffect } from "react";
-
+import { useState, useEffect } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { usePopup } from "../(context)/PopupProvider";
+import axios from "axios";
+import InputMask from "react-input-mask";
 
 export default function Popup() {
   const { isOpen, closePopup, selectedCourseId, courses } = usePopup();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [course, setCourse] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({ name: "", phone: "" });
 
   useEffect(() => {
-    if (isOpen) {
-      console.log("Открыто");
-    } else {
-      console.log("Закрыто");
+    setCourse(selectedCourseId || ""); // Инициализируем значение курса при открытии попапа
+  }, [isOpen, selectedCourseId]);
+
+  const validate = () => {
+    let isValid = true;
+    let errors = { name: "", phone: "" };
+
+    if (!name.trim()) {
+      errors.name = "Введите ваше имя";
+      isValid = false;
     }
-  }, [isOpen]);
+
+    const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+    if (!phoneRegex.test(phone)) {
+      errors.phone = "Введите корректный номер телефона";
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!validate()) return;
+
+    setLoading(true);
+
+    try {
+      await axios.post("/api/send-form", { name, phone, course });
+      alert("Форма успешно отправлена");
+      closePopup();
+    } catch (error) {
+      alert("Ошибка при отправке формы");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -37,27 +75,41 @@ export default function Popup() {
         <h2 className="text-xl font-semibold text-white mb-4">
           Запись на курс
         </h2>
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block mb-3 text-white">Имя</label>
             <input
               type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="w-full p-3 text-white bg-[#161313] rounded-full border-none"
+              required
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm">{errors.name}</p>
+            )}
           </div>
           <div>
             <label className="block mb-3 text-white">Телефон</label>
-            <input
-              type="tel"
+            <InputMask
+              mask="+7 (999) 999-99-99"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
               className="w-full p-3 text-white bg-[#161313] rounded-full border-none"
+              required
             />
+            {errors.phone && (
+              <p className="text-red-500 text-sm">{errors.phone}</p>
+            )}
           </div>
           <div>
             <label className="block mb-3 text-white">Курс</label>
             <div className="relative">
               <select
-                defaultValue={selectedCourseId}
-                className="appearance-none w-full px-3 text-white bg-[#161313] rounded-full border-none "
+                value={course}
+                onChange={(e) => setCourse(e.target.value)}
+                className="appearance-none w-full px-3 text-white bg-[#161313] rounded-full border-none"
+                required
               >
                 {courses.map((course) => (
                   <option key={course.id} value={course.id}>
@@ -82,11 +134,36 @@ export default function Popup() {
           </div>
           <button
             type="submit"
-            className="btn-anime d-flex mx-auto v2 text-capital round-border-full"
+            className="w-full btn-anime d-flex mx-auto v2 text-capital round-border-full"
+            disabled={loading}
           >
-            Записаться <i className="my-icon icon-arrow-right"></i>
+            {loading ? "Отправка..." : "Записаться"}
           </button>
         </form>
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <svg
+              className="animate-spin h-10 w-10 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              ></path>
+            </svg>
+          </div>
+        )}
       </div>
     </div>
   );
