@@ -9,6 +9,7 @@ import Footer from "./(components)/Footer";
 import Script from "next/script";
 import { PopupProvider } from "./(context)/PopupProvider";
 import Popup from "./(components)/Popup";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -97,6 +98,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <SpeedInsights />
         <Script
           id="yandex-metrica"
           strategy="afterInteractive"
