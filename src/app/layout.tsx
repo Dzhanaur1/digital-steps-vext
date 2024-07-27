@@ -74,7 +74,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="rus">
       <head>
         {/* <link rel="stylesheet" href="assets/all-icons/myicon.css" /> */}
 
