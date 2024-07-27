@@ -89,7 +89,7 @@ const page = () => {
                 </div>
                 <div className="section-title mt-20">
                   <h2 className="text-2 text-semibold">
-                    Курс Разработка веб-сайтова для <br />
+                    Курс Разработка веб-сайтов для <br />
                     детей 8-14 лет.
                   </h2>
                 </div>
@@ -169,7 +169,7 @@ const page = () => {
                         <li>
                           <i className="my-icon icon-check" />
                           <p className="text-para-1">
-                            Макетирование с Flexbox и Grid.
+                            Верстка с Flexbox и Grid.
                           </p>
                         </li>
                         <li>
