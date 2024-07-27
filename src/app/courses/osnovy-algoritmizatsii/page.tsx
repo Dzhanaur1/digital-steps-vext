@@ -1,7 +1,30 @@
 import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Digital Steps || Основы алгоритмизации",
+  description:
+    "Изучите основы алгоритмизации на наших курсах. Понимание алгоритмов и их применение в реальных задачах.",
+  keywords:
+    "основы алгоритмизации, курсы алгоритмизации, программирование для детей",
+  authors: { name: "Digital Steps" },
+  openGraph: {
+    title: "Digital Steps | Основы алгоритмизации",
+    description:
+      "Изучите основы алгоритмизации на наших курсах. Понимание алгоритмов и их применение в реальных задачах.",
+    images: [
+      {
+        url: "https://digitalsteps.tech/assets/img/service-collaboration/v1/c++.svg",
+        width: 800,
+        height: 600,
+        alt: "Digital Steps | Основы алгоритмизации",
+      },
+    ],
+  },
+};
 
 const pageData = [
   {

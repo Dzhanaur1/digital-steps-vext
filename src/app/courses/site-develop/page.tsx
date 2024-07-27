@@ -1,7 +1,29 @@
 import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Digital Steps || Разработка веб-сайтов",
+  description:
+    "Изучите разработку веб-сайтов с нуля на наших курсах. Учитесь HTML, CSS и JavaScript с нуля до продвинутого уровня.",
+  keywords: "разработка веб-сайтов, курсы веб-разработки, курсы HTML CSS JS",
+  authors: { name: "Digital Steps" },
+  openGraph: {
+    title: "Digital Steps | Разработка веб-сайтов",
+    description:
+      "Изучите разработку веб-сайтов с нуля на наших курсах. Учитесь HTML, CSS и JavaScript с нуля до продвинутого уровня.",
+    images: [
+      {
+        url: "https://digitalsteps.tech/assets/img/service-collaboration/v1/html.svg",
+        width: 800,
+        height: 600,
+        alt: "Digital Steps | Разработка веб-сайтов",
+      },
+    ],
+  },
+};
 
 const pageData = [
   {

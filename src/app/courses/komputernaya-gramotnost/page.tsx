@@ -1,5 +1,6 @@
 import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
@@ -33,6 +34,29 @@ const pageData = [
     ],
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Digital Steps || Основы работы с компьютером",
+  description:
+    "Изучите основы работы с компьютером на наших курсах. Помогаем детям развивать навыки работы с компьютером и программами.",
+  keywords:
+    "основы работы с компьютером, компьютерная грамотность для детей, курсы компьютерной грамотности",
+  authors: { name: "Digital Steps" },
+  openGraph: {
+    title: "Digital Steps | Основы работы с компьютером",
+    description:
+      "Изучите основы работы с компьютером на наших курсах. Помогаем детям развивать навыки работы с компьютером и программами.",
+    images: [
+      {
+        url: "https://example.com/assets/img/banner/v1/profile-img.png",
+        width: 800,
+        height: 600,
+        alt: "Digital Steps | Основы работы с компьютером",
+      },
+    ],
+  },
+};
+
 const page = () => {
   return (
     <main>

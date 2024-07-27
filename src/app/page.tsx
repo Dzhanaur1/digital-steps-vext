@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     title: "Digital Steps | Курсы IT для детей",
     description:
       "Онлайн школа IT для детей. Курсы по компьютерной грамотности, созданию сайтов и веб-дизайну. Помогаем детям развивать навыки работы с компьютером и программами.",
+    images: [
+      {
+        url: "https://digitalsteps.tech/assets/img/banner/v1/profile-img.png",
+        width: 800,
+        height: 600,
+        alt: "Digital Steps | Курсы IT для детей",
+      },
+    ],
   },
 };
 

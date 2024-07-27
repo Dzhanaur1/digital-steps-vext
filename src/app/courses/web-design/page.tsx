@@ -1,7 +1,30 @@
 import Accordion from "@/app/(components)/Accordion";
 import OpenPopupButton from "@/app/(components)/Button";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Digital Steps || Веб-дизайн",
+  description:
+    "Изучите веб-дизайн на наших курсах. Освойте Figma и научитесь создавать профессиональные дизайны для веб-сайтов.",
+  keywords: "веб-дизайн, курсы веб-дизайна, курсы Figma",
+  authors: { name: "Digital Steps" },
+  openGraph: {
+    title: "Digital Steps | Веб-дизайн",
+    description:
+      "Изучите веб-дизайн на наших курсах. Освойте Figma и научитесь создавать профессиональные дизайны для веб-сайтов.",
+    images: [
+      {
+        url: "https://digitalsteps.tech/assets/img/service-collaboration/v1/logo-7.svg",
+        width: 800,
+        height: 600,
+        alt: "Digital Steps | Веб-дизайн",
+      },
+    ],
+  },
+};
+
 const pageData = [
   {
     title: "Модуль 1. Веб-дизайн | Знакомство с Figma",

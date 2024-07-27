@@ -67,7 +67,7 @@ const CoursesPage = () => {
               <div className="services-card">
                 <div className="card-logo">
                   <img
-                    src="assets/img/service-collaboration/v1/html.svg"
+                    src="/assets/img/service-collaboration/v1/html.svg"
                     alt="logo"
                   />
                 </div>
@@ -98,7 +98,7 @@ const CoursesPage = () => {
               <div className="services-card">
                 <div className="card-logo">
                   <img
-                    src="assets/img/service-collaboration/v1/logo-7.svg"
+                    src="/assets/img/service-collaboration/v1/logo-7.svg"
                     alt="logo"
                   />
                 </div>
@@ -128,7 +128,7 @@ const CoursesPage = () => {
               <div className="services-card">
                 <div className="card-logo">
                   <img
-                    src="assets/img/service-collaboration/v1/c++.svg"
+                    src="/assets/img/service-collaboration/v1/c++.svg"
                     alt="logo"
                   />
                 </div>
