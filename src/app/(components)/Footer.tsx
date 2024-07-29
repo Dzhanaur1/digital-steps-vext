@@ -15,7 +15,7 @@ const Footer = () => {
             >
               <div className="footer__widget-content">
                 <div className="footer-logo">
-                  <Link href="index">
+                  <Link href="/">
                     <img src="/assets/img/logo/Logo.svg" alt="Logo" />
                   </Link>
                 </div>
@@ -53,17 +53,17 @@ const Footer = () => {
               <div className="footer__widget-content">
                 <ul className="link-list">
                   <li>
-                    <Link href="courses/komputernaya-gramotnost">
+                    <Link href="/courses/komputernaya-gramotnost">
                       Компьютерная грамотность
                     </Link>
                   </li>
                   <li>
-                    <Link href="courses/site-develop">
+                    <Link href="/courses/site-develop">
                       Разработка веб-сайтов
                     </Link>
                   </li>
                   <li>
-                    <Link href="courses/web-design">Разработка дизайна</Link>
+                    <Link href="/courses/web-design">Разработка дизайна</Link>
                   </li>
                   <li>
                     <Link href="courses/osnovy-algoritmizatsii">

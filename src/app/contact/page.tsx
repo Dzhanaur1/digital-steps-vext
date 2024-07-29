@@ -64,10 +64,15 @@ const page = () => {
                               <i className="my-icon fa-brands fa-vk"></i>
                             </div>
                             <div className="info-text">
-                              <h4 className="text-4 text-bold">Вконтакте</h4>
+                              <h4 className="text-4 text-bold">
+                                {" "}
+                                <Link href="#">Вконтакте</Link>
+                              </h4>
                               <p className="text-para-1">
-                                Подпишитесь на группу в ВК что бы быть в курсе
-                                всех новостей!
+                                <Link href="#">
+                                  Подпишитесь на группу в ВК что бы быть в курсе
+                                  всех новостей!
+                                </Link>
                               </p>
                             </div>
                           </li>
@@ -76,9 +81,14 @@ const page = () => {
                               <i className="my-icon icon-envelope" />
                             </div>
                             <div className="info-text">
-                              <h4 className="text-4 text-bold">Почта</h4>
+                              <h4 className="text-4 text-bold">
+                                <Link href="mailto:digitalsteps.courses@yandex.ru">
+                                  {" "}
+                                  Почта
+                                </Link>
+                              </h4>
                               <p className="text-para-1">
-                                <Link href="#">
+                                <Link href="mailto:digitalsteps.courses@yandex.ru">
                                   digitalsteps.courses@yandex.ru
                                 </Link>
                               </p>
@@ -89,9 +99,13 @@ const page = () => {
                               <i className="my-icon icon-phone" />
                             </div>
                             <div className="info-text">
-                              <h4 className="text-4 text-bold">Телефон</h4>
+                              <h4 className="text-4 text-bold">
+                                <Link href="tel:+79183923328">Телефон</Link>
+                              </h4>
                               <p className="text-para-1">
-                                <Link href="#">+7 (918) 392-33-28</Link>
+                                <Link href="tel:+79183923328">
+                                  +7 (918) 392-33-28
+                                </Link>
                               </p>
                             </div>
                           </li>

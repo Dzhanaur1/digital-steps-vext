@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Изучите основы работы с компьютером на наших курсах. Помогаем детям развивать навыки работы с компьютером и программами.",
     images: [
       {
-        url: "https://example.com/assets/img/banner/v1/profile-img.png",
+        url: "https://digitalsteps.tech/assets/img/service-collaboration/v1/windows.svg",
         width: 800,
         height: 600,
         alt: "Digital Steps | Основы работы с компьютером",

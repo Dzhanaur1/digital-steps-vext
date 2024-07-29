@@ -42,7 +42,7 @@ const CoursesPage = () => {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="courses/komputernaya-gramotnost">
+                  <Link href="/courses/komputernaya-gramotnost">
                     Компьютерная <br /> грамотность
                   </Link>
                 </h4>
@@ -51,7 +51,7 @@ const CoursesPage = () => {
                   научатся работать...
                 </p>
                 <Link
-                  href="courses/komputernaya-gramotnost"
+                  href="/courses/komputernaya-gramotnost"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long" />
@@ -72,7 +72,7 @@ const CoursesPage = () => {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="courses/site-develop">
+                  <Link href="/courses/site-develop">
                     Разработка <br />
                     Веб-сайтов
                   </Link>
@@ -82,7 +82,7 @@ const CoursesPage = () => {
                   макету.Создание и оформление контента
                 </p>
                 <Link
-                  href="courses/site-develop"
+                  href="/courses/site-develop"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long" />
@@ -103,7 +103,7 @@ const CoursesPage = () => {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="courses/web-design">
+                  <Link href="/courses/web-design">
                     Разработка <br /> дизайна{" "}
                   </Link>
                 </h4>
@@ -112,7 +112,7 @@ const CoursesPage = () => {
                   шрифтами.Создание макетов веб-страниц в Figma
                 </p>
                 <Link
-                  href="courses/web-design"
+                  href="/courses/web-design"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long" />
@@ -133,7 +133,7 @@ const CoursesPage = () => {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="courses/osnovy-algoritmizatsii">
+                  <Link href="/courses/osnovy-algoritmizatsii">
                     Основы <br /> алгоритмизации{" "}
                   </Link>
                 </h4>
@@ -142,7 +142,7 @@ const CoursesPage = () => {
                   Программирование на начальном уровне.
                 </p>
                 <Link
-                  href="courses/osnovy-algoritmizatsii"
+                  href="/courses/osnovy-algoritmizatsii"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long" />
@@ -163,7 +163,7 @@ const CoursesPage = () => {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="courses/service-details">
+                  <Link href="/courses/service-details">
                     Математика. Алгебра. Геометрия
                   </Link>
                 </h4>
@@ -172,7 +172,7 @@ const CoursesPage = () => {
                   решать задачи алгебры и геометрии и др.
                 </p>
                 <Link
-                  href="courses/service-details"
+                  href="/courses/service-details"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long" />

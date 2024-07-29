@@ -1360,7 +1360,7 @@ a:hover {
 .sidebar__wrapper .contact-info-list li .text-para-1 a:hover,
 .sidebar__wrapper .info-list li .text-para-1 a:hover,
 .sidebar__wrapper .recent-news-list .post-text .text-6 a:hover {
-  color: var(--color-purple);
+  color: var(--color-orange);
 }
 .sidebar__wrapper .recent-news-list .post-text .text-6 ~ .date {
   margin-top: 2px;

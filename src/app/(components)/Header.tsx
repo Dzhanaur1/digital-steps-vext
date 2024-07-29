@@ -38,7 +38,7 @@ const Header = () => {
             <div className="mobile-menu-bar">
               <div className="mobile-menu-header">
                 <div className="mobile-logo">
-                  <Link href="index">
+                  <Link href="/">
                     <img src="/assets/img/logo/Logo.svg" alt="Logo" />
                   </Link>
                 </div>
