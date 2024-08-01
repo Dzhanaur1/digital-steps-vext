@@ -59,7 +59,9 @@ export default function Home() {
                   <div className="section-title">
                     <h6 className="text-6 text-upper">Digital Steps</h6>
                     <h2 className="text-2 text-bold mt-20">
-                      Курсы программирования для детей
+                      Курсы{" "}
+                      <span className=" text-nowrap">программирования</span> для
+                      детей
                     </h2>
                   </div>
                   <MainPageForm />

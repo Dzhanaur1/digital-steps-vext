@@ -163,7 +163,7 @@ const CoursesPage = () => {
                   />
                 </div>
                 <h4 className="text-4 text-bold">
-                  <Link href="/courses/service-details">
+                  <Link href="/courses/math">
                     Математика. Алгебра. Геометрия
                   </Link>
                 </h4>
@@ -172,7 +172,7 @@ const CoursesPage = () => {
                   решать задачи алгебры и геометрии и др.
                 </p>
                 <Link
-                  href="/courses/service-details"
+                  href="/courses/math"
                   className="link-anime v7 round-border-full text-capital"
                 >
                   Подробнее <i className="my-icon icon-arrow-right-long" />

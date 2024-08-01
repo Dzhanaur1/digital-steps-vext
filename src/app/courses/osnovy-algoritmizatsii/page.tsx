@@ -122,7 +122,7 @@ const page = () => {
                 </p>
                 <div className="section-title mb-20 mt-20">
                   <h2 className="text-2 text-semibold">
-                    Из чего сосстоит курс?
+                    Из чего соссоит курс?
                   </h2>
                   <section className="faq-section v1">
                     <div className="container">
