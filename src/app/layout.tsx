@@ -10,6 +10,8 @@ import Script from "next/script";
 import { PopupProvider } from "./(context)/PopupProvider";
 import Popup from "./(components)/Popup";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import WhatsAppButton from "./(components)/WhatsAppButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -146,6 +148,7 @@ export default function RootLayout({
 
           <Footer />
         </div>
+        <WhatsAppButton />
       </body>
       {/* <body classNameName={inter.classNameName}>{children}</body> */}
     </html>
