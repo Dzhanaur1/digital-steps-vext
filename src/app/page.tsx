@@ -67,7 +67,7 @@ export default function Home() {
                   <MainPageForm />
                   <div className="section-title">
                     <h5 className="text-6 mt-20 text-left">
-                      <b className="text-bold">Цена:</b> от 550 руб за 1 занятие
+                      <b className="text-bold">Бесплатное </b> пробное занятие
                     </h5>
                   </div>
                 </div>
